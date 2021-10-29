@@ -9,6 +9,8 @@ import { MainComponent } from './main/main.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { BlogComponent } from './blog/blog.component';
 
+import { BlogDataService } from './blog-data.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,7 @@ import { BlogComponent } from './blog/blog.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [BlogDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
