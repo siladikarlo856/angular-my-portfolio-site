@@ -1,7 +1,0 @@
-<ul class="blog-posts">
-    <li *ngFor="let post of blogPosts"> 
-        <h2> {{ post.fields.title }} </h2>   
-        <p>Date created: {{ post.fields.publishDate | date }}</p>
-        <img [src]="post.fields.heroImage.fields.file.url" [alt]="post.fields.heroImage.fields.description">
-    </li>
-</ul>
