@@ -1,3 +1,17 @@
-<a routerLink="/">Main Page</a>
-<a routerLink="/blog">Blog Page</a>
-<a routerLink="/projects">Project Page</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="#"><i class="fa-solid fa-code"></i>Karlo Siladi</a>
+        <button class="navbar-toggler bg-light" type="button"
+                (click)="toggleNavbar()"
+                 data-toggle="collapse" data-target="#navbarNavAltMarkup" 
+                 aria-controls="navbarNavAltMarkup" aria-expanded="false" 
+                 aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-item nav-link" routerLink="/">Home</a>
+                <a class="nav-item nav-link" routerLink="/projects">Projects</a>
+                <a class="nav-item nav-link" routerLink="/blog">Blog Page</a>
+            </div>
+        </div>
+    </nav>
